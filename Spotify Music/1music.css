@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Varela+Round&display=swap');
+/* font-family: 'Roboto Slab', serif;
+font-family: 'Varela Round', sans-serif; */
+
+*{
+    margin : 0;
+    padding: 0;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+nav ul{
+    color: white;
+    align-items: center;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li{
+    padding: 0px 15px;
+}
+
+.brand img{
+    width : 33px;
+    padding: 0 8px;
+}
+
+.brand{
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 70vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 25px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 15px;
+    background-image: url('source/SpotifyHarry/bg.jpg');
+    background-size: cover;
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0;    
+    height: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 0 15px;
+    flex-direction: column;
+}
+#myProgressBar{
+    width: 80vw;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icons{
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin: 60px 0; 
+}
+
+.songItem{
+    height: 50px; 
+    display: flex;
+    background-color: white;
+    width: 80%;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+
+}
+.songItem img{
+    width: 3rem;
+    margin: 0 20px;
+    border-radius: 50%;
+}
+
+.timeStamp{
+    margin: 0 20px;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: red;
+    }
+  }
+
+  #songVolume{
+    position: absolute;
+    right : 10vw;
+    display: flex;
+    color: white;
+    flex-direction: row;
+  }
