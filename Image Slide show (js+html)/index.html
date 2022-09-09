@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .slideshow{
+            width: 80%;
+            height: 700px;
+            background-color: aquamarine;
+            margin: auto;
+        }
+        .slideshow h1{
+            background-color: black;
+            color:white;
+            text-align: center;
+        }
+        #slideImg{
+            width: 100%;
+            height: 550px;
+        }
+    </style>
+    <title>Slide Show</title>
+</head>
+<body>
+    <div class="slideshow">
+        <h1>Image Slide show using HTML & JS</h1>
+        <hr>
+        <img src="resource/pic1.jpg" id="slideImg" alt="pic">
+    </div>
+
+    <script>
+        
+        var images = [  "resource/pic1.jpg",
+                        "resource/pic2.jpg",
+                        "resource/pic3.jpg",
+                        "resource/pic4.jpg",
+                        "resource/pic5.jpg",
+                        "resource/pic6.jpg",
+                        "resource/pic7.jpg",
+                        "resource/pic8.jpg",
+                        "resource/pic9.jpg",
+                        "resource/pic10.jpg" ];
+        var i = 0; 
+        function slides(){
+            document.getElementById("slideImg").src = images[i];
+            if(i < images.length -1)
+                i++;
+            else 
+                i = 0;
+        }
+        setInterval(slides, 2000);
+    </script>
+</body>
+</html>
