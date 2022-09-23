@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            width: 70%;
+            margin: auto;
+            background-color: lightskyblue;
+            border-radius: 5px;
+        }
+        h1{
+            text-align: center;
+        }
+        .data{
+            width: 80%;
+            margin: auto;
+        }
+        .button{
+            text-align: center;
+        }
+        button{
+            background-color: #4CAF50;
+            font-size: 18px;
+            padding: 8px 30px;
+            border-radius: 8px;
+            color: white;
+            align-items: center;
+            
+        }
+        button:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50; /* Green */
+            cursor: pointer;
+        }
+    </style>
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Check Weather ☁️</h1>
+        <form action="/" method="post">
+            <div class="data">
+            <label for="cityInput">CityName*: </label>
+            <input type="text" name="cityName" id="cityInput" required>
+            </div>
+            <div class="data">
+            <label for="units">Choose Temp Unit: </label>
+
+            <select name="units" id="units">
+            <option value="metric">Celcius</option>
+            <option value="standard">Kelvin</option>
+            <option value="imperial">Fahrenheit</option>
+            </select>
+            </div>
+            <div class="button">
+            <button type="submit">Check Temp</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
