@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+    <script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+        <div class="startNav">
+            <div class="logo"><img src="./assets/spotifyLogo.png" alt="Logo"></div>
+            <h1>Spotify</h1>
+            <div class="favourites">Favourites</div>
+        </div>
+        <div class="endNav">
+            <div class="inputField">
+                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                <input type="text" placeholder="Search..">
+                <i class="fa-solid fa-microphone fa-lg"></i>
+            </div>
+            <div class="notification-bell"><i class="fa-solid fa-bell fa-xl"></i></div>
+            <div class="userLogin"><i class="fa-solid fa-arrow-right-to-bracket fa-xl"></i></div>
+        </div>
+    </nav>
+
+    <section class="container">
+        <div class="content col1">
+            <div class="trending">
+                <img src="./assets/trend1.jpg" alt="trendPic">
+                <img src="./assets/trend2.jpg" alt="trendPic">
+                <img src="./assets/trend3.jpg" alt="trendPic">
+            </div>
+            <h1>Latest Release</h1>
+            <div class="latestRelease">
+                <div class="latestRelSong">
+                    <div class="latestSong">
+                        <img src="./assets/latestRel1.jpg" alt="">
+                        <div class="latestSong-detail">
+                            <h3>Onism</h3>
+                            <h3>Aug 11,2017</h3>
+                        </div>
+                    </div>
+                    <div class="latestRelSong-timeStamp">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <p>4.48</p>
+                    </div>
+                </div>
+                <div class="latestRelSong">
+                    <div class="latestSong">
+                        <img src="./assets/latestRel2.jpg" alt="">
+                        <div class="latestSong-detail">
+                            <h3>Onism</h3>
+                            <h3>Aug 11,2017</h3>
+                        </div>
+                    </div>
+                    <div class="latestRelSong-timeStamp">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <p>4.48</p>
+                    </div>
+                </div>
+                <div class="latestRelSong">
+                    <div class="latestSong">
+                        <img src="./assets/latestRel3.jpg" alt="">
+                        <div class="latestSong-detail">
+                            <h3>Onism</h3>
+                            <h3>Aug 11,2017</h3>
+                        </div>
+                    </div>
+                    <div class="latestRelSong-timeStamp">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <p>4.48</p>
+                    </div>
+                </div>
+                <div class="latestRelSong">
+                    <div class="latestSong">
+                        <img src="./assets/latestRel4.jpg" alt="">
+                        <div class="latestSong-detail">
+                            <h3>Onism</h3>
+                            <h3>Aug 11,2017</h3>
+                        </div>
+                    </div>
+                    <div class="latestRelSong-timeStamp">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <p>4.48</p>
+                    </div>
+                </div>
+                <div class="latestRelSong">
+                    <div class="latestSong">
+                        <img src="./assets/latestRel5.jpg" alt="">
+                        <div class="latestSong-detail">
+                            <h3>Onism</h3>
+                            <h3>Aug 11,2017</h3>
+                        </div>
+                    </div>
+                    <div class="latestRelSong-timeStamp">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <p>4.48</p>
+                    </div>
+                </div>
+                <div class="latestRelSong">
+                    <div class="latestSong">
+                        <img src="./assets/latestRel6.jpg" alt="">
+                        <div class="latestSong-detail">
+                            <h3>Onism</h3>
+                            <h3>Aug 11,2017</h3>
+                        </div>
+                    </div>
+                    <div class="latestRelSong-timeStamp">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <p>4.48</p>
+                    </div>
+                </div>
+            </div>
+            <h1>Popular Artists</h1>
+            <div class="popularArtists" id="popularArtists">
+                <div class="artist">
+                    <img src="assets/artist1.jpg" alt="artistPic">
+                    <h3>Ed Sheeran</h3>
+                </div>
+                <div class="artist">
+                    <img src="assets/artist2.jpg" alt="artistPic">
+                    <h3>Ed Sheeran</h3>
+                </div>
+                <div class="artist">
+                    <img src="assets/artist3.jpg" alt="artistPic">
+                    <h3>Ed Sheeran</h3>
+                </div>
+                <div class="artist">
+                    <img src="assets/artist4.jpg" alt="artistPic">
+                    <h3>Ed Sheeran</h3>
+                </div>
+                <div class="artist">
+                    <img src="assets/artist5.jpg" alt="artistPic">
+                    <h3>Ed Sheeran</h3>
+                </div>
+                <div class="artist">
+                    <img src="assets/artist6.jpg" alt="artistPic">
+                    <h3>Ed Sheeran</h3>
+                </div>
+                <div class="artist">
+                    <img src="assets/artist1.jpg" alt="artistPic">
+                    <h3>Ed Sheeran</h3>
+                </div>
+                <div class="artist">
+                    <img src="assets/artist2.jpg" alt="artistPic">
+                    <h3>Ed Sheeran</h3>
+                </div>
+                <div class="artist">
+                    <img src="assets/artist3.jpg" alt="artistPic">
+                    <h3>Ed Sheeran</h3>
+                </div>
+                <div class="artist">
+                    <img src="assets/artist2.jpg" alt="artistPic">
+                    <h3>Ed Sheeran</h3>
+                </div>
+                <div class="artist">
+                    <img src="assets/artist4.jpg" alt="artistPic">
+                    <h3>Ed Sheeran</h3>
+                </div>
+            </div>
+            
+            <div class="musicCategory">
+                <div class="music">
+                    <img src="assets/artist4.jpg" alt="artistPic">
+                    <div class="musicType">
+                        <h4>Retro</h4>
+                    </div>
+                </div>
+                <div class="music">
+                    <img src="assets/artist4.jpg" alt="artistPic">
+                    <div class="musicType">
+                        <h4>Retro</h4>
+                    </div>
+                </div>
+                <div class="music">
+                    <img src="assets/artist4.jpg" alt="artistPic">
+                    <div class="musicType">
+                        <h4>Retro</h4>
+                    </div>
+                </div>
+                <div class="music">
+                    <img src="assets/artist4.jpg" alt="artistPic">
+                    <div class="musicType">
+                        <h4>Retro</h4>
+                    </div>
+                </div>
+                <div class="music">
+                    <img src="assets/artist4.jpg" alt="artistPic">
+                    <div class="musicType">
+                        <h4>Retro</h4>
+                    </div>
+                </div>
+                <div class="music">
+                    <img src="assets/artist4.jpg" alt="artistPic">
+                    <div class="musicType">
+                        <h4>Retro</h4>
+                    </div>
+                </div>
+                <div class="music">
+                    <img src="assets/artist4.jpg" alt="artistPic">
+                    <div class="musicType">
+                        <h4>Retro</h4>
+                    </div>
+                </div>
+                <div class="music">
+                    <img src="assets/artist4.jpg" alt="artistPic">
+                    <div class="musicType">
+                        <h4>Retro</h4>
+                    </div>
+                </div>
+            </div>
+            <h1>Latest English Songs</h1>
+            <div class="LatestEnglishSongs Songs">
+                <div class="engSong Song">
+                    <img src="assets/artist4.jpg" alt="artistPic">
+                    <h3>Ed Sheeran</h3>
+                    <p>Aug 11, 2023</p>
+                </div>
+            </div>
+            <h1>Latest Hindi Songs</h1>
+            <div class="LatestHindiSongs Songs">
+                <div class="hindiSong Song">
+                    <img src="assets/artist4.jpg" alt="artistPic">
+                    <h3>Ed Sheeran</h3>
+                    <p>Aug 11, 2023</p>
+                </div>
+            </div>
+        </div>
+        <div class="queue col2">
+            <ol>
+                <li><img src="" alt=""><h1>Mirage</h1> <h4>Else</h4> heart</li>
+                <li><img src="" alt=""><h1>Mirage</h1> <h4>Else</h4> heart</li>
+                <li><img src="" alt=""><h1>Mirage</h1> <h4>Else</h4> heart</li>
+                <li><img src="" alt=""><h1>Mirage</h1> <h4>Else</h4> heart</li>
+                <li><img src="" alt=""><h1>Mirage</h1> <h4>Else</h4> heart</li>
+                <li><img src="" alt=""><h1>Mirage</h1> <h4>Else</h4> heart</li>
+                <li><img src="" alt=""><h1>Mirage</h1> <h4>Else</h4> heart</li>
+                <li><img src="" alt=""><h1>Mirage</h1> <h4>Else</h4> heart</li>
+                <li><img src="" alt=""><h1>Mirage</h1> <h4>Else</h4> heart</li>
+                <li><img src="" alt=""><h1>Mirage</h1> <h4>Else</h4> heart</li>
+                <li><img src="" alt=""><h1>Mirage</h1> <h4>Else</h4> heart</li>
+                <li><img src="" alt=""><h1>Mirage</h1> <h4>Else</h4> heart</li>
+                <li><img src="" alt=""><h1>Mirage</h1> <h4>Else</h4> heart</li>
+                <li><img src="" alt=""><h1>Mirage</h1> <h4>Else</h4> heart</li>
+                <li><img src="" alt=""><h1>Mirage</h1> <h4>Else</h4> heart</li>
+                <li><img src="" alt=""><h1>Mirage</h1> <h4>Else</h4> heart</li>
+            </ol>
+        </div>
+    </section>
+
+    
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffff;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #1a0f4d;
+}
+
+/* NAV BAR  */
+nav{
+    height: 10vh;
+    display: flex; 
+    flex-direction: row;
+    justify-content:space-between;
+    background-color: #150b3e;
+    padding: 0 0.4rem;
+    align-items: center;
+    position: sticky;    
+    top: 0;
+    left: 0;
+}
+.startNav{
+    display: flex;
+    flex-direction: row;
+    width: 4rem;
+    align-items: center;
+    gap: 10px;
+}
+.logo {
+    /* background-color: red; */
+}
+.logo img{
+    width: 3rem;
+}
+.favourites{
+    margin-left: 40px;
+}
+
+.endNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.inputField{
+    background-color: rgb(118, 146, 206);
+    height: 1.8rem;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 3px;
+}
+input[type = "text"]{
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: large;
+    margin-left: 10px;
+    color: white;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+.notification-bell{
+    margin: 0 3rem;
+}
+
+/* /////////////  body  //////////////////  */
+
+.container{
+    display: flex;
+    border: 1px solid white;
+    width: 100%;
+    height: 90vh;
+    /* background-color: aqua; */
+    overflow: hidden;
+}
+
+.col1{
+    flex: 2;
+    padding: 10px;
+    overflow-y: scroll;
+}
+.col2{
+    flex: 1;
+    padding: 25px;
+    overflow-y: scroll;
+}
+
+.col1::-webkit-scrollbar {
+    display: none;
+}
+.col2::-webkit-scrollbar {
+    display: none;
+}
+
+.content .trending{
+    width: 100%;
+    display: flex;
+    height: 20vw;
+    justify-content: space-around;
+}
+.trending img{
+    width: 20vw;
+    height: 20vw;
+} 
+
+.latestRelease{
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: wrap;
+}
+
+.latestRelSong{
+    width: calc(100%/2);
+    height: 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+.latestSong{
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw;
+    
+}
+
+.latestSong-detail{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.latestRelSong-timeStamp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.popularArtists{
+    width: 100%;
+    height: 13vw;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.artist{
+    /* height: 200px; */
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+.artist img{
+    width: 90%;
+    height: 80%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.popularArtists::-webkit-scrollbar{
+    display: none;
+}
+
+.musicCategory{
+    display: flex;
+    overflow-x: auto;
+}
