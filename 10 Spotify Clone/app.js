@@ -10,3 +10,11 @@ scrollClass.forEach(element => {
     });
   });
 });
+
+
+const player = document.querySelector('.player'); 
+const closePlayer = document.querySelector('.closePlayer'); 
+
+closePlayer.addEventListener('click', function(){
+  player.style.display = 'none'; 
+})
