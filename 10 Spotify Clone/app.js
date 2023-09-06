@@ -20,6 +20,17 @@ closePlayer.addEventListener('click', function(){
   pauseSong(); 
 })
 
+const latestRelease = document.querySelectorAll('.latestSong'); 
+console.log(latestRelease);
+
+latestRelease.forEach(item=>{
+  const imgElement = item.querySelector('img');
+  imgElement.addEventListener('click', ()=>{
+    player.style.display = 'flex'; 
+    playSong(); 
+  })
+})
+
 const songObj = [
   {
   id: 1,
@@ -269,3 +280,19 @@ function playPrv(){
   console.log(id);  
   playSong(); 
 }
+
+
+const latestEnglish = document.querySelector('.LatestEnglishSongs');
+const latestHindi = document.querySelector('.LatestHindiSongs');
+
+songObj.forEach( (item)=>{
+  let newList = document.createElement('div'); 
+  newList.className = "engSong Song";
+  newList.innerHTML = `<img src=${item.imgSrc} alt="artistPic">
+  <h3>${item.songName}</h3>
+  <p>${item.date}</p>`;
+
+  latestEnglish.appendChild(newList);
+  let hindiClone = newList.cloneNode(true); 
+  latestHindi.appendChild(hindiClone); 
+})
