@@ -214,11 +214,12 @@ songObj.forEach( (item)=>{
 
 
 const progress = document.getElementById("progress"); 
+const volume = document.getElementById("volume"); 
 const song = document.getElementById("song")
 
 song.onloadedmetadata = function(){
   progress.max = song.duration; 
-  progress.value = song.currentTime; 
+  progress.value = song.currentTime;
 }
 
 let playPauseBtn = document.querySelector(".playPause i"); 
@@ -253,6 +254,9 @@ if(song.play()){
 progress.onchange = function(){
   playSong(); 
   song.currentTime = progress.value; 
+}
+volume.onchange = function(){
+  song.volume = volume.value/100;
 }
 
 let playerPicImg = document.querySelector('.playerPic img');
