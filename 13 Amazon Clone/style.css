@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Oswald:wght@300;400&family=Phudu:wght@300;400&family=Poppins:wght@300&family=Roboto+Slab:wght@100;200;300&family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Phudu', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Ubuntu', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    padding: 10px 20px;
+    display: flex;
+    background-color: #040D12;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img{
+    width: 100px; 
+}
+
+#flag{
+    width: 25px;
+}
+
+.navbar span{
+    display: flex;
+}
+.navbar span i{
+    display: flex;
+    align-items: center;
+}
+
+.searchBar{
+    width: 630px;
+    height: 40px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.searchBar span{
+    height: 40px;
+    background-color: white;
+    color: black;
+}
+.searchBar input{
+    outline-style: none;
+    width: 550px;
+    padding: 0 10px;
+    border: none;
+    font-size: medium;
+}
+
+select {
+   width: 80px;
+   overflow: hidden;
+   background-color: rgb(243, 239, 239);
+   border: none;
+   outline-style: none;
+   padding: 5px;
+}
+
+#language{
+    outline: none;
+    width: 50px;
+    background: transparent;
+    font-weight: 700;
+    color: white;
+}
+
+.navbar .searchIcon{
+    background-color: rgb(236, 173, 58);
+    width: 60px;
+    justify-content: center;
+}
+.navbar .searchGallery{
+    width: 50px;
+    justify-content: center;
+    color: rgb(137, 124, 108);
+}
+
+.cart{
+    position: relative;
+}
+
+.cart div{
+    /* color: black; */
+    position: absolute;
+    bottom: 4px;
+    left: 16px;
+    z-index: 3;
+    color: #cf7d35;
+    font-weight: 800;
+    font-size: large;
+}
+.navbar p:nth-of-type(1){
+    font-family: 'Open Sans', cursive;
+    font-size: 12px;
+    color: rgb(248, 248, 239);
+}
+.navbar p:nth-of-type(2){
+    font-family: 'Open Sans', cursive;
+    font-size: small;
+    font-weight: 600;
+}
+.navbar .location{
+    position: relative;
+    bottom: -5px;
+    right: 3px;
+}
+
+.menuBar{
+    height: 40px;
+    background-color: rgb(35, 45, 57);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: white;
+    font-family: 'Ubuntu', serif;
+    font-size: 15px;
+}
+
+.menuBar span{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.menuBar img{
+    width: 30px;
+}
+.menuBar .spl{
+    font-size: large;
+    color: rgb(217, 215, 211);
+}
