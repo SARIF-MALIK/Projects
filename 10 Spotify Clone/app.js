@@ -300,3 +300,29 @@ songObj.forEach( (item)=>{
   let hindiClone = newList.cloneNode(true); 
   latestHindi.appendChild(hindiClone); 
 })
+
+
+const searchBar = document.querySelector('#searchBar'); 
+
+searchBar.addEventListener('keydown', ()=>{
+  let searchContent = searchBar.value; 
+   
+  console.log(searchContent.toUpperCase());   
+  let searchObj = songObj.filter((item)=>{
+    return item.songName.toUpperCase().includes(searchContent.toUpperCase()); 
+  })
+  queue.innerHTML=""; 
+  searchObj.forEach( (item)=>{
+    let newList = document.createElement('LI'); 
+    newList.innerHTML = `<div class="queueRow">
+    <img src=${item.imgSrc} alt="">
+    <div class="latestSong-detail">
+        <h3>${item.songName}</h3>
+        <h3>${item.date}</h3>
+    </div>
+    <i class="fa-regular fa-heart"></i>
+    </div>`;
+  
+    queue.appendChild(newList);
+  })
+})
