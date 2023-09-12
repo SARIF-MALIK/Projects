@@ -137,3 +137,10 @@ select {
     font-size: large;
     color: rgb(217, 215, 211);
 }
+
+.container{
+    height: 850px;
+    background-image: url('./media/crousal1.jpg'); 
+    background-repeat: no-repeat;
+    
+}
