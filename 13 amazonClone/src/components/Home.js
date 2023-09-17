@@ -1,9 +1,11 @@
 import React from 'react'
 import Navbar from './Navbar'
+import NavBarLanding from './NavBarLanding'
 const Home = () => {
   return (
     <>
         <Navbar/>
+        <NavBarLanding/>
         <section classNameName="container">
         <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
             <div classNameName="carousel-inner">
