@@ -75,65 +75,65 @@
 
 // -----------------------
 
-// function x(){
-//     for(var i=0;i<6;i++){
-//         setTimeout(()=>{
-//             console.log(i);
-//         },1000*i)
-//     }
-// }
-// x();
+function x(){
+    for(var i=0;i<6;i++){
+        setTimeout(()=>{
+            console.log(i);
+        },1000*i)
+    }
+}
+x();
 
 // --------------------
 
-// function x(){
-//     for(let i=0;i<6;i++){
-//         setTimeout(()=>{
-//             console.log(i);
-//         },1000*i)
-//     }
-// }
-// x();
+function x(){
+    for(let i=0;i<6;i++){
+        setTimeout(()=>{
+            console.log(i);
+        },1000*i)
+    }
+}
+x();
 
 // -------------------
 
-// function x(){
-//     for(const i=0;i<6;i++){
-//         setTimeout(()=>{
-//             console.log(i);
-//         },1000*i)
-//     }
-// }
-// x();
+function x(){
+    for(const i=0;i<6;i++){
+        setTimeout(()=>{
+            console.log(i);
+        },1000*i)
+    }
+}
+x();
 
 
 // ----------------------------------
 
-// function fun(){
-//     let i = 10;
-//     while(i>10){
-//         setInterval(()=>{
-//             console.log("bas 1 baar aur")
-//         }, 1000)
-//     }
-//     console.log("namaste")
-// }
-// fun()
+function fun(){
+    let i = 10;
+    while(i>10){
+        setInterval(()=>{
+            console.log("bas 1 baar aur")
+        }, 1000)
+    }
+    console.log("namaste")
+}
+fun()
 
 // -----------------------------
 
-// function x(){
-//     for(var i=0;i<6;i++){
-//         function close(i){
-//                 setTimeout(function(){
-//                     console.log(i);
-//                 },1000*i)
-//         }   
-//         close(i);
-//         console.log("interview");
-//     }
-// }
-// x();
+function x(){
+    for(var i=0;i<6;i++){
+        function close(i){
+                setTimeout(function(){
+                    console.log(i);
+                },1000*i)
+        }   
+        close(i);
+        console.log("interview");
+    }
+}
+x();
 
 
 
