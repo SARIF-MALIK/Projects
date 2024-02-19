@@ -1,0 +1,12 @@
+:root{
+    --varName: red; 
+    --colorRed: yellow; 
+}
+
+h1{
+    color: var(--varName);
+}
+
+p{
+    background-color: var(--colorRed);
+}
