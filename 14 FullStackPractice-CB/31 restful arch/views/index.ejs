@@ -1,0 +1,14 @@
+
+<%- include('./partials/header') %>          create and include 
+
+<h1> hello index ejs</h1>
+
+<% for(let data of arr) %>
+    <h1><%= {data.id} %></h1>
+    <h1><%= {data.author} %></h1>
+    <h1><%= {data.comment} %></h1>
+<% } %> 
+
+
+
+<%- include('./partials/footer') %> 
