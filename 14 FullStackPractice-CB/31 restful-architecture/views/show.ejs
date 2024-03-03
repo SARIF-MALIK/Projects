@@ -1,0 +1,21 @@
+
+    
+<%- include('./partials/header') %>
+
+<h1>Showing a particular Blog</h1>
+
+<div id="showw">
+
+    <h5><%=foundProduct.id%></h5>
+    <h2><%=foundProduct.author%></h2>
+    <p><%=foundProduct.comment%></p>
+    <p><button> <a href="/blogs">Back</a> </button></p>
+    
+    <p>
+        <form action="/blogs/<%=foundProduct.id%>?_method=delete" method="POST">
+            <button>Delete</button>
+        </form>
+    </p>
+</div>
+
+<%- include('./partials/footer') %>
