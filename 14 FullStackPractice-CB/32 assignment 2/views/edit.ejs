@@ -1,0 +1,29 @@
+<%- include('./partials/header') %>
+
+        <form action="/<%=obj.id%>/edit?_method=PATCH" method="POST">
+            <div class="container">
+                <fieldset >
+                    <legend>EDIT COURSE</legend>
+                    <section>
+                        <label for="course">Course Name: </label>
+                        <br>
+                        <textarea type="text" name="course" id="course" cols="30" rows="1" ><%=obj.course%></textarea>
+                    </section>
+                    <section>
+                        <label for="des">Description: </label>
+                        <br>
+                        <textarea type="text" name="des" id="des" cols="30" rows="3"><%=obj.des%></textarea>
+                    </section>
+                    <section>
+                    <label for="fee">Course Fee: </label>
+                    <br>
+                    <textarea type="number" name="fee" id="fee" cols="30" rows="1"><%=obj.fee%></textarea>
+                </section>
+                
+                <button type="submit">Submit</button>
+            </fieldset>
+        </div>
+            
+        </form>
+        
+<%- include('./partials/footer') %> 

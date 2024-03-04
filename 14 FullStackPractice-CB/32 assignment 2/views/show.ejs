@@ -1,0 +1,18 @@
+<%- include('./partials/header') %>
+
+<div class="container">
+
+        <div class="card">
+            <h1> <%=foundItem.course %></h1>
+            <p><%=foundItem.des %></p>
+            <h2><%=foundItem.fee %></h2>
+            <a href="/<%=foundItem.id%>/edit">Edit</a>
+            <br>
+            <a href="/">Back</a>
+            <form action="/<%=foundItem.id%>/delete?_method=DELETE" method="post">
+                <BUtton>Delete</BUtton>
+            </form>
+        </div> 
+        
+    </div>
+<%- include('./partials/footer') %> 

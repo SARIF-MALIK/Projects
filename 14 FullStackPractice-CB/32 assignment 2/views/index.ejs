@@ -1,0 +1,19 @@
+<%- include('./partials/header') %>
+
+<div class="container">
+    <div class="create">
+        <a href="/new" style="text-decoration: none;">CREATE</a>
+    </div>
+    <% comments.map((comment)=>{ %>
+        <div class="card">
+            <h1> <%=comment.course %></h1>
+            <p><%=comment.des %></p>
+            <p><%=comment.id %></p>
+            <h2><%=comment.fee %></h2>
+            <a href="/<%=comment.id%>/show">Show</a>
+        </div>
+
+        <% }) %>   
+        
+    </div>
+<%- include('./partials/footer') %> 

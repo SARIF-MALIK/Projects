@@ -1,0 +1,30 @@
+<%- include('./partials/header') %>
+
+<form action="/new" method="POST">
+    <div class="container">
+        <fieldset class="card">
+            <legend>CREATE NEW COURSE</legend>
+            <section>
+                <label for="course">Course Name: </label>
+                
+                <br>
+                <input type="text" name="course" id="course">
+            </section>
+            <section>
+                <label for="des">Description: </label>
+                <br>
+                <input type="text" name="des" id="des">
+            </section>
+            <section>
+                <label for="fee">Course Fee: </label>
+                <br>
+                <input type="number" name="fee" id="fee">
+            </section>
+            
+            <button type="submit">Submit</button>
+        </fieldset>
+    </div>
+
+</form>
+
+<%- include('./partials/footer') %> 
