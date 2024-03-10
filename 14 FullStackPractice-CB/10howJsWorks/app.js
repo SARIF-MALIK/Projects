@@ -34,26 +34,26 @@
 
 
 
-// let newFilteredArr = arr.filter(function(item){
-//     if(item > 70){
-//         return true; 
-//     }
-//     return false; 
-// })
+let newFilteredArr = arr.filter(function(item){
+    if(item > 70){
+        return true; 
+    }
+    return false; 
+})
 
 
-// function x(){
-//     var a = 7; 
-//     function y(){
-//         var a = 10; 
-//         console.log(a); 
-//     }
-//     return y; 
-// }
+function x(){
+    var a = 7; 
+    function y(){
+        var a = 10; 
+        console.log(a); 
+    }
+    return y; 
+}
 
-// var z = x(); 
-// console.log(z); 
-// z(); 
+var z = x(); 
+console.log(z); 
+z(); 
 
 let b =10; 
 var c = 100; 
